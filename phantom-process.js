@@ -117,7 +117,7 @@ var forcePrintMedia = function() {
 
 var renders = 0, maxRenders = 500;
 var loop = function() {
-  var line = system.stdin.readLine();
+  var line = system.stdin.read();
   if (!line.trim()) return phantom.exit(0);
 
   try {
